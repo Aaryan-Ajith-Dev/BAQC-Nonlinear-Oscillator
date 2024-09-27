@@ -55,14 +55,6 @@ pip install numpy matplotlib qutip
 5. **Visualization:**
    - Plots of the Wigner function are displayed in a figure with three subplots for each time step.
 
-### Usage:
-
-Run the following code to simulate and display the Wigner function evolution:
-
-```bash
-python wigner_simulation.py
-```
-
 ### Output:
 - A plot of the Wigner function at three time points (initial, mid-point, final).
 
@@ -94,7 +86,7 @@ python wigner_simulation.py
 Run the following code to simulate and display the bifurcation plot:
 
 ```bash
-python bifurcation_plot.py
+python3 bifurcation_plot.py
 ```
 
 ### Output:
@@ -106,4 +98,7 @@ python bifurcation_plot.py
 - **Wigner Function**: The Wigner function is a quasi-probability distribution used to visualize quantum states in phase space.
 - **Bifurcation Plot**: This plot shows the system's behavior under changing conditions, highlighting transitions in stability.
 --- 
+
+## References:
+[Bifurcation-based adiabatic quantum computation with a nonlinear oscillator network: Toward quantum soft computing](https://www.researchgate.net/publication/282790373_Bifurcation-based_adiabatic_quantum_computation_with_a_nonlinear_oscillator_network_Toward_quantum_soft_computing)
 
