@@ -1,14 +1,11 @@
-# Quantum Simulation: Wigner Function and Bifurcation Plots
+# BAQC-Nonlinear-Oscillator
 
 ## Overview
-This project simulates the evolution of a quantum harmonic oscillator using the QuTiP library and performs a bifurcation analysis using a system of coupled differential equations. The simulation is based on two parts:
+This project simulates the evolution of a quantum harmonic oscillator using the QuTiP library and performs a bifurcation analysis using a system of coupled differential equations.
 
 1. **Wigner Function Evolution**: Visualizes the evolution of a quantum system using Wigner functions.
 2. **Bifurcation Plot**: Uses the RK4 method to simulate and plot bifurcation diagrams for a time-dependent system.
-
-### Features:
-- **Quantum Harmonic Oscillator**: Time evolution under a non-linear Hamiltonian.
-- **Bifurcation Plot**: Tracks bifurcation behavior using a Lorenz-like system.
+3. **Simulation (Collaborative)**: Uses QuTip to solve the Ising problem via adiabatic evolution.
 
 ## Requirements
 - Python 3.x
@@ -94,10 +91,23 @@ python3 bifurcation_plot.py
 
 ---
 
-## Notes:
-- **Wigner Function**: The Wigner function is a quasi-probability distribution used to visualize quantum states in phase space.
-- **Bifurcation Plot**: This plot shows the system's behavior under changing conditions, highlighting transitions in stability.
---- 
+## Part 3: Simulation (Collaborative)
+
+### Parameters:
+- N = 2: Number of KPOs
+- n_levels = 5: Truncation level for Fock space
+- K = 1.0: Kerr nonlinearity
+- p = 7.0 * K: Maximum pump strength
+- xi = 0.5 * K: Coupling constant
+- T = 700 / K: Total evolution time
+- num_steps = 1000: number of time steps
+
+### Components:
+1. Computing the hamiltonian and enforcing the adiabatic evolution constraint on Delta based on the coupling matrix.
+2. Solving the hamiltonian and obtain the final state
+3. Checking if the ground state of the hamiltonian is the same as the final state obtained.
+
+---
 
 ## References:
 [Bifurcation-based adiabatic quantum computation with a nonlinear oscillator network: Toward quantum soft computing](https://www.researchgate.net/publication/282790373_Bifurcation-based_adiabatic_quantum_computation_with_a_nonlinear_oscillator_network_Toward_quantum_soft_computing)
