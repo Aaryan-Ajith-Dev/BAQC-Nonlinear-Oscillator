@@ -94,13 +94,13 @@ python3 bifurcation_plot.py
 ## Part 3: Simulation (Collaborative)
 
 ### Parameters:
-- N = 2: Number of KPOs
-- n_levels = 5: Truncation level for Fock space
-- K = 1.0: Kerr nonlinearity
-- p = 7.0 * K: Maximum pump strength
-- xi = 0.5 * K: Coupling constant
-- T = 700 / K: Total evolution time
-- num_steps = 1000: number of time steps
+- `N = 2`: Number of KPOs
+- `n_levels = 5`: Truncation level for Fock space
+- `K = 1.0`: Kerr nonlinearity
+- `p = 7.0 * K`: Maximum pump strength
+- `xi = 0.5 * K`: Coupling constant
+- `T = 700 / K`: Total evolution time
+- `num_steps = 1000`: number of time steps
 
 ### Components:
 1. Computing the hamiltonian and enforcing the adiabatic evolution constraint on Delta based on the coupling matrix.
