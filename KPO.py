@@ -1,5 +1,3 @@
-# what about frequency? also change to RK4 -- use lorenz attractor plot
-
 import numpy as np
 import matplotlib.pyplot as plt
 
